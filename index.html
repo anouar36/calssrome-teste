@@ -8,6 +8,11 @@
             font-family: Arial, sans-serif;
             margin: 20px;
         }
+        .sub {
+            margin: 20px;
+           width: 100px;
+           height: 50px;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -54,30 +59,32 @@
         <tbody>
             <tr>
                 <td>Article 1</td>
-                <td><input type="number" value="1" class="quantity" min="0"></td>
-                <td><input type="number" value="10" class="unitPrice" min="0" step="0.01"></td>
-                <td class="itemTotal">10.00</td>
+                <td><input id="nub1" type="number" value="3" class="quantity" min="0"></td>
+                <td><input id="nub2" type="number" value="10" class="unitPrice" min="0" step="0.01"></td>
+                <td id="solition1" class="itemTotal">10.00</td>
             </tr>
             <tr>
                 <td>Article 2</td>
-                <td><input type="number" value="2" class="quantity" min="0"></td>
-                <td><input type="number" value="15" class="unitPrice" min="0" step="0.01"></td>
-                <td class="itemTotal">30.00</td>
+                <td><input id="nub3" type="number" value="2" class="quantity" min="0"></td>
+                <td><input id="nub4" type="number" value="15" class="unitPrice" min="0" step="0.01"></td>
+                <td id="solition2" class="itemTotal">30.00</td>
             </tr>
             <tr>
                 <td>Article 3</td>
-                <td><input type="number" value="3" class="quantity" min="0"></td>
-                <td><input type="number" value="7.5" class="unitPrice" min="0" step="0.01"></td>
-                <td class="itemTotal">22.50</td>
+                <td><input id="nub5" type="number" value="3" class="quantity" min="0"></td>
+                <td><input id="nub6" type="number" value="7.5" class="unitPrice" min="0" step="0.01"></td>
+                <td id="solition3" class="itemTotal">22.50</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <td colspan="3">Total Facture</td>
-                <td id="invoiceTotal">62.50</td>
+                <td  id="invoiceTotal">62.50</td>
             </tr>
         </tfoot>
     </table>
-    <script src="invoice.js"></script>
+    <button class="sub" type="submit"> submit </button>
+
+    <script  src="invoice.js"> </script>
 </body>
 </html>
